@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>junghunhui</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <style type="text/css"></style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.1/css/jquery.mb.YTPlayer.min.css">
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+     <!-- scrollTrigger -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+  
+     <!-- scrollTo -->
+     <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollToPlugin.min.js"></script>
+  
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ko.js"></script>
+  
+</head>
+
+<body>
+
+    <div w3-include-html="header.html"></div>
+  
+    <main>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box1">
+                    <div>
+                        <h3>24년 1월 1일부<br>인천-하네다 매일 운항</h3>
+                        <h5>도쿄의 야경을 감상해보세요</h5>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide box2">
+                    <div>
+                        <h3>제주에서 가을을 만나다</h3>
+                        <h5>#할인쿠폰#경품이벤트<br>#네이버페이 적립혜택</h5>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide box3">
+                    <div>
+                        <h3>A380,A350으로<br>장거리 여행도<br>편안하게 모시겠습니다</h3>
+                        <h5>#유료자석할인쿠폰#기내와이파이쿠폰<br>#유럽#미주</h5>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide box4">
+                    <div>
+                        <h3>인천-차잉마이<br>12월 23일 부 매일운항</h3>
+                        <h5>여유로운 일상과 쉼을 위한 여행<br>이번 겨율, 따뜻한 차잉마이로 매일 운항합니다</h5>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide box5">
+                    <div>
+                        <h3>프라이빗하고 여유로운공간<p class="b5-t">비즈니스 스위트 & 스마티움</p></h3>
+                        <h5>24년 3월부 로스앤젤레스 매일 2회 운항<br>고품격 여행을 위한 선택</h5>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide box6">
+                    <div>
+                        <h3>인천 ↔ 시애틀<br>12월 부<P class="b6-t">주 5회 증편운항</P></h3>
+                        <h5>#일,월,수,금,토 운항<br>#증편기념 시애틀롯데호텔 특별 혜택제공</h5>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide box7">
+                    <div>
+                        <h3>반려동물 동반 탑승객과 반려인<P class="b7-t">을 위한 혜택</P></h3>
+                        <h5>아시아나 X 베이컨</h5>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide box8">
+                    <div>
+                        <h3>예술과 역사의 도시 로마<br>인천-로마 주 5회 운항</h3>
+                        <h5>ASIANA LIKE, 하루 한 번 로마여행 떠나고<br>행운을 잡으세요. 인천-로마 유료좌석 15%할인 중</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div> 
+        </div>
+
+    </main>
+
+    <article class="ticket">
+        <div class="ticket_box">
+            <div>
+                <h3>아시아나와 함께 하는<br>즐거운 여행!<h3>
+            </div>
+            <div class="ticket_wrap">
+                <!--tab 버튼-->
+                <ul class="ticket_tab_btn">
+                  <li class="ticket_active"><a href="#ticket01">
+                    <p>
+                      <span>왕복</span>
+                    </p>
+                  </a></li>
+                  
+                  <li><a href="#ticket02">
+                    <p>
+                      <span>편도</span>
+                    </p>
+                  </a></li>
+                </ul>
+                
+                <!--tab 내용-->
+            </div>
+            <div class="ticket_tab_container">
+                <div class="ticket_content" id="ticket01">
+                    <div class="ticket_list_box1">
+                        <div>
+                          <h4>INC</h4>
+                          <h5>출발지</h5>
+                        </div>
+                        <div class="ticket_mg">
+                          <img src="https://www.koreanair.com/booking__swap--disabled.svg">
+                        </div>
+                        <div>
+                          <h4>YNC</h4>
+                          <h5>도착지</h5>
+                        </div>
+                    </div>
+                    <div class="ticket_date1"> 
+                       <div>
+                        <p>날짜</p>
+                        <input class="dateSelector" placeholder="가는날 ~ 오는날" />
+                       </div>
+                    </div>
+                    <div class="ticket_datea"> 
+                        <div>
+                         <p class="popupopen">탑승객</p>
+                         <a>성인<input type="number" min="0" max="5" value="1" class="adt">명,</a>
+                         <a>소아<input type="number" min="0" max="5" value="1" class="kid">명</a>
+                        </div>
+                    </div>
+                    <div class="ticket_dateb"> 
+                        <div>
+                         <p>좌석</p>
+                         <select>
+                            <option value="prs">좌석 등급 선택</option>
+                            <option value="prs">일반석</option>
+                            <option value="prs">프레스티지석</option>
+                            <option value="prs">일등석</option>
+                         </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="ticket_content" id="ticket02">
+                    <div class="ticket_list_box2">
+                        <div>
+                          <h4>INC</h4>
+                          <h5>출발지</h5>
+                        </div>
+                        <div class="ticket_mg">
+                          <img src="https://www.koreanair.com/booking__swap--disabled.svg">
+                        </div>
+                        <div>
+                          <h4>YNC</h4>
+                          <h5>도착지</h5>
+                        </div>
+                    </div>
+                    <div class="ticket_date2"> 
+                        <div>
+                         <p>날짜</p>
+                         <input class="dateSelector" placeholder="가는날" />
+                        </div>
+                    </div>
+                     <div class="ticket_datea"> 
+                         <div>
+                          <p class="popupopen">탑승객</p>
+                          <a>성인<input type="number" min="0" max="5" value="1" class="adt">명,</a>
+                         <a>소아<input type="number" min="0" max="5" value="1" class="kid">명</a>
+                         </div>
+                     </div>
+                     <div class="ticket_dateb"> 
+                         <div>
+                          <p>좌석</p>
+                          <select>
+                             <option value="prs">좌석 등급 선택</option>
+                             <option value="prs">일반석</option>
+                             <option value="prs">프레스티지석</option>
+                             <option value="prs">일등석</option>
+                          </select>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+      </article>
+
+      <article class="check">
+        <div class="check_box">
+            <div>
+                <h4>아시아나항공의 상용 고객 우대 프로그램</h4>
+                <h3>Asiana Clup</h3>
+            </div>
+            <div>
+                <div class="mg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4693/4693459.png">
+                    <p>대기예약 시 우선권</p>
+                </div>
+                <div class="mg"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/8247/8247376.png">
+                    <p>대기탑승 시 우선권</p>
+                </div>
+                <div class="mg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7475/7475070.png">
+                    <p>수하물 우선처리</p>
+                </div>
+                <div class="mg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/11322/11322432.png">
+                    <p>마일리지 항공권 양도*</p>
+                </div>
+            </div>
+            <div class="check_bnt">
+                <button>회원안내 </button>
+                <button>클럽 가입하기</button>
+            </div>
+        </div>
+      </article>
+    
+      <article class="special">
+            <div class="swiper special_box">
+                <div>
+                    <h3>최저가 간편 조회</h3>
+                    <h5>*오늘부터 6개월 내 출발하는 항공편의 최저가와 출발일을 간편하게 조회하실 수 있습니다.</h5>
+                </div>
+                <div class="swiper-wrapper special_box_list">
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_JFK_01.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 뉴욕/ 존 F 케네디</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>1,847,100~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_FCO_02.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 로마/ 다빈치</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>1,381,500~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_LAX_03.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 로스앤젤레스</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>1,455,100~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_SGN_01.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 호찌민</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>461,500~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_PEK_01.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 베이징</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>217,900~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_FRA_01.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 프랑크푸르트</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>1,213,700~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_CEB_01.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 세부</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>437,100~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_DEL_02.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 델리</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>726,800~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                        <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_HGH_01.jpg">
+                        <div>
+                            <h4>서울/인천 ↔ 황저우</h4>
+                            <p>왕복</p>
+                            <div>
+                                <h4>KRW</h4>
+                                <h4>441,500~</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide special_sub_list">
+                    <img src="https://ozimg.flyasiana.com/image_fixed/destination/des_M_PVG_02.jpg">
+                    <div>
+                        <h4>서울/인천 ↔ 상하이/푸동</h4>
+                        <p>왕복</p>
+                        <div>
+                            <h4>KRW</h4>
+                            <h4>307,900~</h4>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+      </article>
+
+      <article class="asiana_pick">
+        <div class="asiana_pick_box">
+            <div>
+                <h5>아시아나항공과 함께</h5>
+                <h3>다양한 여행정보를 만나보세요!</h3>
+            </div>
+            <div class="wrap">
+                <ul class="asiana_pick_btn">
+                  <li class="active"><a href="#tab01">
+                    <p>
+                      <span>OZ’s PICK!<br>BEST 여행지</span>
+                    </p>
+                  </a></li>
+                  <li><a href="#tab02">
+                    <p>
+                      <span>캐빈승무원<br>여행 일기</span>
+                    </p>
+                  </a></li>
+                </ul>
+                <!--tab 내용-->
+                <div class="tab_container">
+                  <div class="content" id="tab01">
+                    <div>
+                        <section>
+                            <img src="https://ozimg.flyasiana.com/temp/image/20180525/72f705a3-e2e8-4e97-8f7a-8eb05d36214a.jpeg">
+                            <div>
+                                <h5>사이판/사이판</h5>
+                                <h4>Saipan</h4>
+                            </div>
+                          </section>
+                          <section>
+                            <img src="https://ozimg.flyasiana.com/temp/image/20180525/7a3accb9-89a4-4d57-8dd8-2635217a6646.jpeg">
+                            <div>
+                                <h5>싱가포르/싱가포르</h5>
+                                <h4>Singapore</h4>
+                            </div>
+                          </section>
+                    </div>
+                    <div>
+                        <section>
+                            <img src="https://ozimg.flyasiana.com/temp/image/20180525/1e11d426-625d-4f3d-9c23-c2c806d3a8e5.jpeg">
+                            <div>
+                                <h5>대한민국/서울</h5>
+                                <h4>Seoul</h4>
+                            </div>
+                          </section>
+                          <section>
+                            <img src="https://ozimg.flyasiana.com/temp/image/20180525/4ab1d016-ed09-41b1-86fb-d564252330e3.jpeg">
+                            <div>
+                                <h5>베트남/호찌민</h5>
+                                <h4>Ho Chi Minh</h4>
+                            </div>
+                          </section>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="content" id="tab02">
+                        <div>
+                            <section>
+                                <img src="https://ozimg.flyasiana.com/temp/image/20200228/8646f6d3-a578-4953-b8ad-64e46e647517.jpeg">
+                                <div>
+                                    <h5>싱가포르의 이국적인 거리들</h5>
+                                </div>
+                              </section>
+                              <section>
+                                <img src="https://ozimg.flyasiana.com/temp/image/20200122/14321914-f231-42d3-a603-b39af776ad0e.jpeg">
+                                <div>
+                                    <h5>노스쇼어(North shore)로 떠나는 하루, 하와이</h5>
+                                </div>
+                              </section>
+                        </div>
+                        <div>
+                            <section>
+                                <img src="https://ozimg.flyasiana.com/temp/image/20200227/2d8709ff-80b2-4028-8522-fd6e8c9c7c53.jpeg">
+                                <div>
+                                    <h5>뉴욕, 거리에서 만나는 예술작품들의 세계</h5>
+                                </div>
+                              </section>
+                              <section>
+                                <img src="https://ozimg.flyasiana.com/temp/image/20200122/b85f438b-d0ed-469a-b32e-90bd1a0afc7d.jpeg">
+                                <div>
+                                    <h5>친숙한 듯 낯선 그 신비로운 매력 속으로, 이스탄불</h5>
+                                </div>
+                              </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </article>
+
+      <article class="gongi">
+        <div>
+            <Img src="https://m.flyasiana.com/C/mobile/image/main/img_service_myreartrip.jpg">
+        </div>
+    </article>
+    
+    <div class="swiper event">
+        <div>
+            <h3>event</h3>
+        </div>
+        <div class="swiper-wrapper eventbox">
+          <div class="swiper-slide eventa">
+                <h5>아시아나 X 뉴욕현대미술관 MoMA 공동프로모션</h5>
+          </div>
+          <div class="swiper-slide eventb">
+            <h5>AGl 골프에약 서비스 신규 마일리지 적립 제휴</h5>
+          </div>
+          <div class="swiper-slide eventc">
+            <h5>VISA INFINTE 서비스를 경험해 보세요</h5>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- 팝업 -->
+
+<div class="popup">
+    <div class="pwrap">
+        <div class="pwrap_box">
+            <div class="popup_list">
+                <label>성인</label>
+               <div>
+                <button class="popup_bnt_m" onclick='count("plus")'>
+                    <img src="https://www.koreanair.com/passenger__control-sub.svg">
+                </button>
+               </div>
+                <div>
+                    <a href="">성인</a>
+                    <a href="" id='result'>1</a>
+                    <a href="">명</a>
+                </div>
+                <div>
+                    <button class="popup_bnt_p" onclick='count("minus")'>
+                        <img src="https://www.koreanair.com/passenger__control-add.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="popup_list">
+                <label>소아</label>
+               <div>
+                <button class="popup_bnt_m">
+                    <img src="https://www.koreanair.com/passenger__control-sub.svg">
+                </button>
+               </div>
+                <div>
+                    <a href="">소아</a>
+                    <a href="" id='result1'>1</a>
+                    <a href="">명</a>
+                </div>
+                <div>
+                    <button class="popup_bnt_p">
+                        <img src="https://www.koreanair.com/passenger__control-add.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="popup_list">
+                <label>유아</label>
+               <div>
+                <button class="popup_bnt_m">
+                    <img src="https://www.koreanair.com/passenger__control-sub.svg">
+                </button>
+               </div>
+                <div>
+                    <a href="">유아</a>
+                    <a href="" id='result2'>1</a>
+                    <a href="">명</a>
+                </div>
+                <div>
+                    <button class="popup_bnt_p">
+                        <img src="https://www.koreanair.com/passenger__control-add.svg">
+                    </button>
+                </div>
+            </div>
+            <a href="#">X 닫기</a>
+        </div>
+    </div>
+</div> 
+    
+  
+    <div w3-include-html="footer.html"></div>
+  
+</body>
+
+<script>
+    includeHTML();
+</script>
+
+</html>
