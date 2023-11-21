@@ -22,7 +22,6 @@ body {
   max-width: 1200px;
   margin: auto;
   font-size: 0.9rem;
-  text-align: center;
   line-height: 1rem;
   letter-spacing: 0.1px;
   color: black;
@@ -112,6 +111,7 @@ article {
   height: 100%;
   margin: auto;
   padding: 40px 30px;
+  text-align: center;
 }
 
 button {
@@ -128,19 +128,21 @@ button {
 
 /* ticket 항공권 예매 */
 
-.ticket {
-  background-color: #e1e1e1;
+ .ticket {
+  background-color: #837c7c;
   display: block;
+  height: 930px;
   padding: 40px 30px;
 }
 
 .ticket> div {
   margin: auto;
+  margin-top: 50px;
   padding: 16px 30px;
 }
 
 .ticket_box div> h3 {
-  padding: 16px 10px;
+  padding: 16px 30px;
   font-size: 2.3rem;
   font-weight: bold;
   text-align: center;
@@ -151,7 +153,7 @@ button {
   background-color: white;
   margin-top: 50px;
   padding: 16px 30px;
-  border-radius: 15px;
+  border-radius: 20px;
   color:  #242424;
 }
 
@@ -191,14 +193,14 @@ button {
 
 .ticket_tab_container{
   width: 100%; 
-  height: 380px;
+  height: 500px;
   overflow: hidden;
 }
 
 .ticket_tab_container > div{
   width: 100%; 
-  height: 380px;
-  padding: 16px 10px;
+  height: 500px;
+  padding: 16px 30px;
 }
 
 .ticket_list_box1 {
@@ -231,9 +233,68 @@ button {
   border-radius: 15px;
 }
 
+.ticket_date1 div p {
+  text-align: left;
+}
+
 .ticket_date1 input {
   background: #ececec;
+  width: 100%;
+  text-align: right;
   border: none;
+}
+
+.ticket_datea {
+  padding: 16px 20px;
+}
+
+.ticket_datea a {
+  margin-right: 10px;
+  line-height: 1.5rem;
+}
+
+.ticket_datea div {
+  background: #ececec;
+  padding: 16px 20px;
+  border-radius: 15px;
+}
+
+.ticket_datea div> :nth-child(1) {
+  text-align: left;
+}
+
+.ticket_datea div> .ticket_p {
+  text-align: right;
+}
+
+.ticket_datea input {
+  background: #ececec;
+  width: 40px;
+  text-align: center;
+  border: none;
+}
+
+.ticket_dateb {
+  padding: 16px 20px;
+}
+
+.ticket_dateb div {
+  background: #ececec;
+  padding: 16px 20px;
+  border-radius: 15px;
+}
+
+.ticket_dateb div p {
+  text-align: left;
+}
+
+.ticket_dateb select {
+  background: #ececec;
+  width: 100%;
+  border: none;
+}
+
+.ticket_dateb select option {
   text-align: right;
 }
 
@@ -273,42 +334,15 @@ button {
   border-radius: 15px;
 }
 
+.ticket_date2 p {
+  text-align: left;
+}
+
 .ticket_date2 input {
   background: #ececec;
-  border: none;
+  width: 100%;
   text-align: right;
-}
-
-.ticket_datea {
-  padding: 16px 20px;
-}
-
-.ticket_datea div {
-  background: #ececec;
-  padding: 16px 20px;
-  border-radius: 15px;
-}
-
-.ticket_datea input {
-  background: #ececec;
   border: none;
-  text-align: center;
-}
-
-.ticket_dateb {
-  padding: 16px 20px;
-}
-
-.ticket_dateb div {
-  background: #ececec;
-  padding: 16px 20px;
-  border-radius: 15px;
-}
-
-.ticket_dateb select {
-  background: #ececec;
-  border: none;
-  text-align: center;
 }
 
 /* ticket_reserve 항공편 예약 */
@@ -732,7 +766,178 @@ button {
 @media screen and (min-width: 1366px) {
     article {
         margin: auto;
-        max-width: 1000px;
+        max-width: 1200px;
       } 
+
+      .itinerary {
+        max-width: 1000px;
+      }
+
+      .ticket {
+        background-color: #837c7c;
+        display: block;
+        height: 700px;
+        padding: 40px 100px;
+      }
+
+      .ticket> div {
+        margin: auto;
+        margin-top: 50px;
+        padding: 40px 50px;
+      }
+      
+      .ticket_box div> h3 {
+        padding: 20px 50px;
+        font-size: 2.6rem;
+        font-weight: bold;
+        text-align: left;
+        line-height: 3rem;
+      }
+      
+      .ticket_box {
+        background-color: white;
+        margin-top: 50px;
+        padding: 20px 100px;
+        border-radius: 15px;
+        color:  #242424;
+      }
+
+      .ticket_box li {
+        list-style: none;
+        margin: 0;
+        margin-right: 20px; 
+      }
+      
+      .ticket_wrap ul {
+        display: flex;
+        padding: 20px 50px;
+        border-bottom: 1px solid #4d4c4c;
+      }
+      
+      .ticket_wrap ul p {
+        width: 100px;
+        padding: 16px 20px;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        color: #4d4c4c;
+      }
+      
+      .ticket_tab_btn > li.ticket_active p{
+        background-color: #4d4c4c;
+        color: white;
+      }
+
+      .ticket_content {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .ticket_tab_container{
+        width: 100%; 
+        height: 140px;
+        overflow: hidden;
+      }
+      
+      .ticket_tab_container > div{
+        width: 100%; 
+        height: 140px;
+      }
+      
+      .ticket_list_box1 {
+        display: flex;
+        padding: 16px 20px;
+        justify-content: space-around;
+      }
+      
+      .ticket_list_box1 div {
+        padding: 0;
+        margin: auto;
+        text-align: center;
+      }
+      
+      .ticket_list_box1 div h4 {
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+      }
+      
+      .ticket_list_box1 div h5 {
+        font-weight: 100;
+      }
+      
+      .ticket_date1 div {
+        background: #ececec;
+        width: 200px;
+        padding: 16px 20px;
+        border-radius: 10px;
+      }
+      
+      .ticket_date1 input {
+        background: #ececec;
+        width: 100%;
+        border: none;
+        text-align: right;
+      }
+      
+      .ticket_list_box2 {
+        display: flex;
+        padding: 16px 20px;
+        justify-content: space-around;
+      }
+      
+      .ticket_list_box2 div {
+        padding: 0;
+        margin: auto;
+        text-align: center;
+      }
+      
+      .ticket_date2 {
+        padding: 16px 20px;
+      }
+      
+      .ticket_date2 div {
+        background: #ececec;
+        width: 200px;
+        padding: 16px 20px;
+        border-radius: 10px;
+      }
+      
+      .ticket_date2 input {
+        background: #ececec;
+        width: 100%;
+        border: none;
+        text-align: right;
+      }
+
+      .ticket_datea div {
+        background: #ececec;
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 15px;
+      }
+
+      .ticket_datea div> .ticket_p {
+        display: flex;
+      }
+      
+      .ticket_datea input {
+        background: #ececec;
+        width: 30px;
+        line-height: 1.2rem;
+        border: none;
+      }
+      
+      .ticket_dateb div {
+        background: #ececec;
+        width: 160px;
+        padding: 16px 20px;
+        border-radius: 10px;
+      }
+      
+      .ticket_dateb select {
+        background: #ececec;
+        width: 100%;
+        border: none;
+        text-align: right;
+      }
 
 }
